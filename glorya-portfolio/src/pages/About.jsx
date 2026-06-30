@@ -30,7 +30,7 @@ export default function About() {
         </SectionTitle>
       </Reveal>
 
-      <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-16 items-start mt-14">
+      <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-16 items-start mt-14 px-4 md:px-8">
         <Reveal className="text-muted text-base leading-[1.85]">
           <p className="mb-5">
             I'm{" "}
