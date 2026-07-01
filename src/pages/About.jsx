@@ -44,7 +44,7 @@ export default function About() {
           </p>
           <p className="mb-5">
             My main focus right now is{" "}
-            <strong className="text-text font-semibold">cybersecurity</strong> —
+            <strong className="text-text font-semibold">cybersecurity</strong>,
             learning how to identify vulnerabilities, prevent threats, and think
             like both a builder and a defender. I enjoy knowing not just how
             things work, but how they can break.
@@ -62,7 +62,7 @@ export default function About() {
           {INFO_CARDS.map((card) => (
             <div
               key={card.label}
-              className="bg-surface border border-border rounded-card px-5.5 py-5 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-glow"
+              className="bg-surface border border-border rounded-card p-8 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-glow"
             >
               <div className="font-mono text-[11px] text-accent uppercase tracking-[0.12em] mb-2">
                 {card.label}

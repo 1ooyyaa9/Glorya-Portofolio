@@ -5,17 +5,17 @@ import { Eyebrow, SectionTitle } from "../components/Heading.jsx";
 const INFO_CARDS = [
   {
     label: "Education",
-    value: "Information Technology Student",
-    sub: "Focus: Software Development & Computer Networks",
+    value: "Informatics Student",
+    sub: "Focus: Cybersecurity & Web Development",
   },
   {
     label: "Currently",
-    value: "Building full-stack projects + Cisco networking labs",
-    sub: "Documenting progress build-in-public",
+    value: "Building projects + keeping up with campus life",
+    sub: "Second-year at President University",
   },
   {
     label: "Interests",
-    value: "Web Development, Network Security, UI/UX",
+    value: "Web Development, UI/UX, Cybersecurity",
     sub: "Clean systems, clean interfaces",
   },
 ];
@@ -30,34 +30,31 @@ export default function About() {
         </SectionTitle>
       </Reveal>
 
-      <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-16 items-start mt-14 px-4 md:px-8">
+      <div className="grid md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-16 items-start mt-14">
         <Reveal className="text-muted text-base leading-[1.85]">
           <p className="mb-5">
             I'm{" "}
             <strong className="text-text font-semibold">Glorya Estetica</strong>
-            , a student and developer focused on building clean, functional web
-            applications with{" "}
-            <strong className="text-text font-semibold">React</strong> and
-            modern frontend tooling, paired with backend logic that actually
-            holds up.
+            , a second-year Informatics student at{" "}
+            <strong className="text-text font-semibold">
+              President University
+            </strong>
+            , focused on building web applications and understanding the systems
+            that power them.
           </p>
           <p className="mb-5">
-            Alongside development, I spend a lot of time in{" "}
-            <strong className="text-text font-semibold">
-              networking and cybersecurity,
-            </strong>{" "}
-            studying how systems communicate, where they break, and how to keep
-            them safe. That dual lens shapes how I build: not just "does it
-            work," but "is it solid."
+            My main focus right now is{" "}
+            <strong className="text-text font-semibold">cybersecurity</strong> —
+            learning how to identify vulnerabilities, prevent threats, and think
+            like both a builder and a defender. I enjoy knowing not just how
+            things work, but how they can break.
           </p>
           <p>
-            Outside of code, I'm usually deep in a{" "}
-            <strong className="text-text font-semibold">Cisco lab</strong>,
-            organizing for{" "}
+            Outside of code, I'm organizing for{" "}
             <strong className="text-text font-semibold">
               PUFA Computer Science
             </strong>
-            , or quietly shipping small projects in public.
+            .
           </p>
         </Reveal>
 
@@ -65,7 +62,7 @@ export default function About() {
           {INFO_CARDS.map((card) => (
             <div
               key={card.label}
-              className="bg-surface border border-border rounded-card px-5.5 py-5 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-glow"
+              className="bg-surface border border-border rounded-card px-10 py-7 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-glow"
             >
               <div className="font-mono text-[11px] text-accent uppercase tracking-[0.12em] mb-2">
                 {card.label}
